@@ -24,3 +24,6 @@ cabal.project.local~
 
 # Python folders
 __pycache__/
+
+# MacOs folder
+.DS_Store
