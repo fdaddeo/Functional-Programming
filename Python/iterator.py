@@ -1,8 +1,22 @@
+"""
+Write a Python iteratir instantiated over a list of ints that produces value in such way that
+each new maximum tops seen looking from left to right.
+"""
+
 from random import shuffle
 from math import inf
 
 class CountingTop:
-    def __init__(self, values):
+    """
+    A class that returns an iterator that contains every maximum changes seen from left to right in a list.
+    """
+    
+    def __init__(self, values: list):
+        """
+        Class constructor.
+
+        :param values: The list in which search for the maximum changes.
+        """
         self._values = values
 
     def __iter__(self):
