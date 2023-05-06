@@ -14,7 +14,9 @@ fn time_seed() -> u32 {
     let now = st::now().duration_since(st::UNIX_EPOCH).unwrap();
     now.as_millis() as u32
 }
-
+ßß
+/// Launch two dices 1000 times and counts the occurences.
+///
 fn main() {
     let mut counter: [i32; 11] = [0; 11];
     let mut seed = time_seed();
