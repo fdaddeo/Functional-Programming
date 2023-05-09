@@ -1,13 +1,14 @@
--- Implement a max function.
--- Given two parameters, returns the maximum of the two.
+-- Implements a max function.
+-- Params: two numbers.
+-- Returns: the maximum of the two parameters.
 maxOfTwo :: (Ord a) => a -> a -> a
 maxOfTwo a b
     | a < b = b
     | b <= a = a
 
--- Transform a string into an operation.
--- Params: a string and two numbers. The string param represents the operation to perform on the two numbers.
--- Returns: a string. Return the result, as a textual message.
+-- Transforms a string into an operation.
+-- Params: a string and two numbers. The string represents the operation to be performed with the two numbers.
+-- Returns: the result as textual message.
 calculate :: String -> Float -> Float -> String
 calculate "+" x y = show (x + y)
 calculate "-" x y = show (x - y)

@@ -1,4 +1,4 @@
--- Define Ball data type with its center (x, y) and movement offsets.
+-- Define Ball data type with its center (x, y) and movement offsets (dx, dy).
 data Ball = Ball { x :: Int
                  , y :: Int
                  , dx :: Int
@@ -13,7 +13,9 @@ arenaH = 360
 ballW = 20
 ballH = 20
 
--- Move the ball by its movement offset.
+-- Moves the ball by its movement offset.
+-- Params: a Ball.
+-- Returns: the updated Ball, with its new position.
 move :: Ball -> Ball
 move (Ball x y dx dy)
     | x + dx > arenaW - ballW = move (Ball x y (-dx) dy)

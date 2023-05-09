@@ -4,6 +4,8 @@
 
 import System.Random
 
+-- Implements the game logic.
+-- Params: a secret number and the number of tries allowed.
 playRound :: Int -> Int -> IO ()
 playRound secret 10 = do 
     putStrLn  ("Secret number was: " ++ show secret ++ " but you reached the maximum number of tries.")
